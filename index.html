@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="sidebar">
+            <ul class="sidebar-list">
+                <li class="lists" onclick="hideSidebar1()"><a href="#">&#10005;</a></li>
+                <li class="lists"><a href="#Reseller">Reseller</a></li>
+                <li class="lists dropdown2">
+                    <a href="#dropdown">Products &#9660;</a>
+                    <ul class="dropdown2-menu">
+                        <li class="dropdown2-li"><a href="#product1">Product 1</a></li>
+                        <li class="dropdown2-li"><a href="#product2">Product 2</a></li>
+                        <li class="dropdown2-li"><a href="#product3">Product 3</a></li>
+                    </ul>
+                </li>
+                <li class="lists"><a href="#Features">Features</a></li>
+                <li class="lists"><a href="#Video-Tutorials">Video Tutorials</a></li>
+                <li class="lists"><a href="#Free-Tools">Free Tools</a></li>
+                <li class="lists"><a href="#FAQ">FAQ</a></li>
+                <li class="lists"><a href="#Knowledge-Base">Knowledge Base</a></li>
+                <li class="lists"><a href="#">Pricing</a></li>
+                <li class="lists"><a href="#">Download</a></li>
+                <li class="lists"><a href="#">Support</a></li>
+                <li class="lists"><button>Sign In &gt;</button></li>
+            </ul>
+        </nav>
+
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="list"><a href="">LOGO HERE</a></li>
+                <li class="list hideOnMobile hideOnTablet"><a href="">Reseller</a></li>
+                <li class="list hideOnMobile dropdown">
+                    <a href="#dropdown">Products &#9660;</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-li"><a href="#product1">Product 1</a></li>
+                        <li class="dropdown-li"><a href="#product2">Product 2</a></li>
+                        <li class="dropdown-li"><a href="#product3">Product 3</a></li>
+                    </ul>
+                </li>
+                <li class="list hideOnMobile hideOnTablet"><a href="">Features</a></li>
+                <li class="list hideOnMobile hideOnTablet"><a href="">Video Tutorials</a></li>
+                <li class="list hideOnMobile hideOnTablet"><a href="">Free Tools</a></li>
+                <li class="list hideOnMobile hideOnTablet"><a href="">FAQ</a></li>
+                <li class="list hideOnMobile hideOnTablet"><a href="">Knowledge Base</a></li>
+            </ul>
+
+            <ul class="auth-links">
+                <li class="auth-li hideOnMobile"><a href="#">Pricing</a></li>
+                <li class="auth-li hideOnMobile"><a href="#">Download</a></li>
+                <li class="auth-li hideOnMobile"><a href="#">Support</a></li>
+                <li class="auth-li hideOnMobile"><button>Sign In &gt;</button></li>
+                <li class="auth-li menu-button1 btn" onclick="showSidebar1()" style="font-size: 26px;">&#9776;</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Section 1 -->
+        <section class="section1">
+            <h1 class="text1">eiusmod tempor incididunt ut labore et dolore magna aliqua</h1>
+            <h1 class="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+            <div class="video-play-icon">
+                <img src="./assets/video-play-icon.png" alt="" style="height: 50px; width: 50px;">
+            </div>
+            <p>Just <span class="price">$200</span> For <span class="price">100</span> Mailboxes</p>
+            <div class="cta-buttons">
+                <button class="btn-primary">Free Download</button>
+                <button class="btn-secondary">
+                    Buy Now!
+                    <span style="color: red; font-size: 20px;">&#9660;</span>
+                    <span style="font-size: 30px; font-weight: bold;">75</span>
+                    <span
+                        style="display: inline-flex; flex-direction: column; justify-content: center; align-items: center; font-size: 10px;">
+                        <span>%</span>
+                        <span>OFF</span>
+                    </span>
+                </button>
+            </div>
+            <div class="features-wrap">
+                <p class="features"><img class="img-icon" src="./assets/001.png" alt=""> Scelerisque is eleifend</p>
+                <p class="features"><img class="img-icon" src="./assets/002.png" alt=""> Mattis nunc sed blandit</p>
+                <p class="features"><img class="img-icon" src="./assets/003.png" alt=""> Mattis nunc sed blandit</p>
+                <p class="features"><img class="img-icon" src="./assets/004.png" alt=""> Felis eget nunc lobortis</p>
+                <p class="features"><img class="img-icon" src="./assets/005.png" alt=""> Felis eget nunc lobortis</p>
+                <p class="features"><img class="img-icon" src="./assets/002.png" alt=""> Felis eget nunc lobortis</p>
+            </div>
+        </section>
+
+        <!-- Navbar -->
+        <div>
+            <nav class="sidebar2">
+                <ul class="sidebar2-list">
+                    <li class="lists2" onclick="hideSidebar2()"><a href="#">&#10005;</a></li>
+                    <li class="lists2"><a href="#Overview">Overview</a></li>
+                    <li class="lists2"><a href="#Features">Features</a></li>
+                    <li class="lists2"><a href="#How-it-works">How it works</a></li>
+                    <li class="lists2"><a href="#User-Manual">User Manual</a></li>
+                    <li class="lists2"><a href="#FAQ">FAQ</a></li>
+                    <li class="lists2"><a href="#Videos">Videos</a></li>
+                    <li class="lists2"><a href="#Pricing">Pricing</a></li>
+                    <li class="lists2"><a href="#Screenshots">Screenshots</a></li>
+                </ul>
+            </nav>
+
+            <nav class="navbar2">
+                <ul class="navbar2-list">
+                    <li class="nav2-list"><a href="#Product-Menu">Product Menu</a></li>
+                    <li class="nav2-list hidden"><a href="#Overview">Overview</a></li>
+                    <li class="nav2-list hidden"><a href="#Features">Features</a></li>
+                    <li class="nav2-list hidden"><a href="#How-it-works">How it works</a></li>
+                    <li class="nav2-list hidden"><a href="#User-Manual">User Manual</a></li>
+                    <li class="nav2-list hidden"><a href="#FAQ">FAQ</a></li>
+                    <li class="nav2-list hidden"><a href="#Videos">Videos</a></li>
+                    <li class="nav2-list hidden"><a href="#Pricing">Pricing</a></li>
+                    <li class="nav2-list hidden"><a href="#Screenshots">Screenshots</a></li>
+                    <li class="menu-button2" onclick="showSidebar2()" style="font-size: 26px;">&#9776;</li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Section 2 -->
+        <section>
+            <div class="bg1">
+                <h3 style="color: #0056b3; line-height: 1.5;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do dolore magna aliqua - <span style="color: #0ea5e9;">Now 10X Faster!</span></h3>
+            </div>
+
+            <div class="content">
+                <div>
+                    <p style="color: #0ea5e9;">dolore magna aliqua dolore magna aliqua!</p>
+                    <h2>Ante metus dictum at tempor commodo ullamcorper</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a aculin at erat pellentesque
+                        Amet mauns commodo quis imperdiet massa tincidunt Quisque egestas diam in arcu cursus euismod.
+                    </p>
+                    <p>Tincidunt id aliquet risus feugiat in ante metus. Dui accumsan sit amet nulla facilisi morbi.
+                        Nisl nisi scelerisque eu ultrices vitae auctor eu augue. Ut placerat orci nulla pellentesque.
+                        Diam vel quam elementum pulvinar etiam con quam. Odio ut sem milla pharetra diam. Turtor
+                        condimentum lacinia quis vel</p>
+                    <p>Tincidunt id aliquet risus feugiat in ante metus. Dur accumsan sit amet nulla faci morbi Nisl
+                        nisi scxertsque eu ultrices sitae auctor eu augue. Ut placerat orci nulla pellentesque. Diam vel
+                        quam elementum pulvinar etiam non quam. Odio ut sem nulla pharetra diam. Tortor condimentum
+                        lacinia quis vel.</p>
+                </div>
+
+                <div>
+                    <h4>Ante metus dictum at tempor commodo ullamcorper</h4>
+                    <p>Tincidunt id aliquet risus feugiat in ante metus. Dul accumsan sit amet nulla facilisi morbi.
+                        Nisi nisi scelerisque eu ultrices vitae auctor eu augue. Ut placerat orci nulla pellentesque.
+                        Dum vel quam elementum pulvinar etiam nan quam. Odio ut sem nulla pihanetra diam. Tortor
+                        condimentum lacinia quis vel.</p>
+                    <h4>Ante metus dictum at tempor commodo ullamcorper</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a saculis at erat
+                        pellentesque. Amet mauris commodo quis imperdiet massa tincidunt. Qunque egestas diam in arcu
+                        cursus euomod</p>
+                    <h4>Ante metus dictum at tempor commodo ullamcorper</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor inodidunt ut
+                        labore et dolore magna aliqua. Nibh mauris cursus mattis molestie a Laculis at erat
+                        pellentesque. Amet mauris commodo quts imperdiet massa oncidunt Quisque egestan diam in arcu
+                        cursus euismod</p>
+                </div>
+            </div>
+
+            <div class="bg2">
+                <div>
+                    <h2>Quisque egestas diam in arcu cursus euismod</h2>
+                    <h4>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h4>
+                    <p>1. Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    <p>2. Tincidunt id aliquet risus feugiat in ante metus</p>
+                    <p>3. Pretium vulputate sapien nec sagittis aliquam malesuada bibendum</p>
+                    <p>4. Eget nullam non nisi est sit amet</p>
+                    <div class="cta-buttons2">
+                        <button class="btn3">Try For Free</button>
+                    </div>
+                </div>
+                <div class="play-icon">
+                    <img src="./assets/video-play-icon.png" style="height: 45px; width: 45px;" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Lorem Ipsum</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#feature">Feature</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#download">Download</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#video">Video Tutorials</a></li>
+                    <li><a href="#tech-support">Technical Support</a></li>
+                    <li><a href="#live-chat">Live Chat</a></li>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <p>Company Inc.</p>
+                <p>Rehoboth Beach, DE</p>
+                <p>United States</p>
+                <p>+1 (302) 416-3056</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Privacy Policy | Terms of Use | GDPR | Security | Press Releases</p>
+        </div>
+    </footer>
+</body>
+
+</html>
